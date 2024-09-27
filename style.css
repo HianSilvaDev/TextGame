@@ -1,0 +1,133 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+#log {
+  width: 60vw;
+  height: 100%;
+  background-color: #121212;
+  color: #ffffff;
+  font-size: 1.5vw;
+  position: relative;
+}
+
+#stats {
+  border-left: solid 2px #333333;
+  width: 40vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #121212;
+  color: #fff;
+  box-shadow: -4px -13px 42px 0px #333333;
+}
+
+.bar {
+  width: 80%;
+  height: 40px;
+  border: solid 2px;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.bar span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  user-select: none;
+  transform: translate(-50%, -50%);
+}
+
+.fillbar {
+  height: 100%;
+  transition: 1s;
+  width: 0px;
+}
+
+.health {
+  background: rgb(255, 0, 0);
+}
+
+.stamine {
+  background: rgb(0, 255, 0);
+}
+
+.hungry {
+  background: rgb(255, 165, 0);
+}
+
+.thirst {
+  background: rgb(0, 191, 255);
+}
+
+.option {
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.option:hover {
+  text-decoration: underline;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+  background: rgb(0, 0, 0);
+  border-bottom: solid 1px #333333;
+  border-top: solid 1px #333333;
+}
+
+nav button {
+  font-size: 40px;
+  color: #cccccc;
+  background: none;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+#menuHolder {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(41, 41, 41, 0.9);
+  z-index: 1;
+}
+
+#inventory {
+  width: 60%;
+  height: 80%;
+  position: absolute;
+  background: #000;
+  color: #FEFEFEFE;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+.float_menu{
+  position: absolute;
+  width: 40px;
+  text-align: center;
+}
